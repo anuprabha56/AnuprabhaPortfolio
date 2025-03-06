@@ -1,0 +1,254 @@
+/* General Body and Text Styling */
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+    background-color: #36013f; /* Set background color */
+    color: white; /* Set text color */
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #DDA0DD !important; /* Set navbar background color */
+    padding-top: 0.5rem; /* Reduced top padding */
+    padding-bottom: 0.5rem; /* Reduced bottom padding */
+}
+
+.navbar-nav .nav-link {
+    color: rgb(0, 0, 0) !important; /* Set text color for nav items */
+}
+
+.navbar-brand {
+    color: rgb(0, 0, 0) !important; /* Set text color for navbar brand */
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero h1, .hero p {
+    color: white;
+}
+
+/* Portfolio Section */
+.w3-row-padding img {
+    margin-bottom: 12px;
+}
+
+/* About and Skills Section */
+.container {
+    margin-top: 50px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #430c4e;
+    color: white;
+    padding: 20px 0;
+}
+
+/* Skills Section */
+.skills-section {
+    max-width: 600px;
+    margin: auto;
+    color: #ffffff;
+    padding: 0px;
+}
+
+.skills-section h2 {
+    text-align: center;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    height: 20px;
+}
+
+.progress {
+    background-color: #555;
+    color: rgb(240, 168, 224);
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+}
+/* Inspired Quotes Section */
+.inspired-quotes-container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.inspired-quotes-container h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Quote Cards */
+.testimonial {
+    display: inline-block;
+    width: 300px;
+    background: #f7b9ec;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect with Smooth Bounce */
+.testimonial:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    animation: bounceHover 0.5s ease-in-out;
+}
+
+/* Animated Quote Text - Always Visible */
+.testimonial p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #000000;
+    opacity: 1;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Subtle Color Change on Hover */
+.testimonial:hover p {
+    color: #5a064b;
+}
+
+/* Author Name Styling */
+.testimonial p:last-child {
+    font-size: 1rem;
+    color: #6e0365;
+    font-weight: bold;
+}
+
+/* Bounce Effect on Hover */
+@keyframes bounceHover {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.07); }
+    100% { transform: scale(1.05); }
+}
+
+
+/* Contact Section */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Profile Image Styling */
+.profile-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Adds space below the image */
+}
+
+.profile-image img {
+    width: 120px; /* Adjust size as needed */
+    height: 120px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the area properly */
+    border: 4px solid #ffffff; /* White border for contrast */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+/* Email & Mobile Section */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Label Button */
+.label-btn {
+    background-color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Input Field Styling */
+input {
+    background-color: #e6e6e6;
+    border: none;
+    padding: 10px;
+    border-radius: 120px;  /* Fixed the typo */
+    font-size: 16px;
+    width: 280px;
+    text-align: center;
+}
+
+/* Social Media Section */
+h3 {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 10px;
+}
+
+.social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Icons Styling */
+.social-item i {
+    font-size: 30px;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Icon Hover Effect */
+.social-item i:hover {
+    transform: scale(1.2);
+}
+
+/* LinkedIn Styling */
+.linkedin {
+    color: #0077b5; /* LinkedIn Brand Color */
+}
+
+/* Instagram Color */
+.fab.fa-instagram {
+    color: #e4405f;
+}
+
+/* Facebook Color */
+.fab.fa-facebook {
+    color: #1877f2;
+}
+
+/* Location Icon */
+.fas.fa-map-marker-alt {
+    color: #ff5733;
+}
+
